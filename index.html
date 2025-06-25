@@ -1,0 +1,49 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Movie World</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🎬 Movie World</h1>
+    <div class="controls">
+      <input type="text" id="search" placeholder="Search movies...">
+      <select id="genreFilter">
+        <option value="all">All Genres</option>
+        <option value="action">Action</option>
+        <option value="sci-fi">Sci-Fi</option>
+        <option value="drama">Drama</option>
+        <option value="animation">Animation</option>
+      </select>
+      <button id="toggleTheme">🌙 Dark</button>
+    </div>
+  </header>
+
+  <main id="movie-container"></main>
+
+  <section id="favorites-section">
+    <h2>Your Favorites ❤️</h2>
+    <div id="favorites-container"></div>
+  </section>
+
+  <footer>
+    <p>© 2025 Movie World</p>
+  </footer>
+
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <span id="closeModal">&times;</span>
+      <h2 id="modalTitle"></h2>
+      <p id="modalDesc"></p>
+      <p><strong>Cast:</strong> <span id="modalCast"></span></p>
+      <a id="modalTrailer" href="#" target="_blank" class="trailer-btn">🎬 Watch Trailer</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
